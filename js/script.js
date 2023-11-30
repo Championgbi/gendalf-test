@@ -18,10 +18,6 @@ navToggle.addEventListener("click", function () {
   }
 });
 
-if (document.documentElement.scrollWidth > 800 + "px") {
-  ageRestrictions.textContent = "Как правильно составить резюме?";
-}
-
 window.addEventListener("resize", (e) => {
   let pageWidth = document.documentElement.scrollWidth;
   if (pageWidth >= 800) {
