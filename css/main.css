@@ -673,7 +673,7 @@ details p {
 }
 .interview-section {
   padding: 18px 0;
-  background: url("./../../../img/intervew-mobile.jpg") rgba(0, 47, 61, 0.6);
+  background: url("./../img/intervew-mobile.jpg") rgba(0, 47, 61, 0.6);
   mix-blend-mode: multiply;
   background-repeat: no-repeat;
   background-position: center;
