@@ -83,7 +83,7 @@
 .interview-section__input:valid {
   outline: 2px solid $light-green;
   border: 1px solid transparent;
-  background-image: url("./../../../../img/icons/form-valid.svg");
+  background-image: url("./../../img/icons/form-valid.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
 }
@@ -92,7 +92,7 @@
   outline: 2px solid $error;
   border: 1px solid transparent;
   position: relative;
-  background-image: url("./../../../../img/icons/form-invalid.svg");
+  background-image: url("./../../img/icons/form-invalid.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
 }
@@ -157,7 +157,7 @@
 @media (min-width: 768px) {
   .interview-section {
     padding: 61px 0;
-    background: url("./../../../img/intervew-desktop.jpg") $shade;
+    background: url("./../img/intervew-desktop.jpg") $shade;
     mix-blend-mode: multiply;
     @include section-background;
   }

@@ -606,7 +606,7 @@ summary {
 
 summary::before {
   position: absolute;
-  content: url("./../../../img/icons/faq-toggle.svg");
+  content: url("./../img/icons/faq-toggle.svg");
   left: 0;
   top: 3px;
   transition: transform 0.2s ease;
@@ -764,7 +764,7 @@ details p {
 .interview-section__input:valid {
   outline: 2px solid rgb(155, 204, 55);
   border: 1px solid transparent;
-  background-image: url("./../../../../img/icons/form-valid.svg");
+  background-image: url("./../../img/icons/form-valid.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
 }
@@ -773,7 +773,7 @@ details p {
   outline: 2px solid rgb(253, 117, 131);
   border: 1px solid transparent;
   position: relative;
-  background-image: url("./../../../../img/icons/form-invalid.svg");
+  background-image: url("./../../img/icons/form-invalid.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
 }
@@ -782,7 +782,7 @@ details p {
   outline: 2px solid rgb(253, 117, 131);
   border: 1px solid transparent;
   position: relative;
-  background-image: url("./../../../../img/icons/form-invalid.svg");
+  background-image: url("./../../img/icons/form-invalid.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
 }
@@ -854,7 +854,7 @@ details p {
 @media (min-width: 768px) {
   .interview-section {
     padding: 61px 0;
-    background: url("./../../../img/intervew-desktop.jpg") rgba(0, 47, 61, 0.6);
+    background: url("./../img/intervew-desktop.jpg") rgba(0, 47, 61, 0.6);
     mix-blend-mode: multiply;
     background-repeat: no-repeat;
     background-position: center;
