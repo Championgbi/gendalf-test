@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/main.css">
+  <link href="https://cdn.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.css" rel="stylesheet">
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <ul class="header__list">
+          <li class="header__nav-item">
+            <a href="#">
+              <svg width="31" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20.716 22.188c-5.785 4.62-13.87 3.233-18.024-1.982C-1.25 15.25-.826 8.086 3.72 3.652 8.361-.875 15.577-1.24 20.685 2.818c5.181 4.11 6.463 11.964 1.833 17.596.095.105.19.198.297.303l7.152 7.04c.35.345.551.741.456 1.231-.18.929-1.293 1.325-2.045.73-.117-.093-.212-.198-.318-.291L21.024 22.5c-.106-.125-.212-.219-.308-.312Zm-8.02-19.694C7.11 2.484 2.543 6.948 2.522 12.445 2.5 17.963 7.058 22.47 12.653 22.48c5.584.01 10.151-4.454 10.172-9.951.021-5.518-4.535-10.024-10.13-10.035Z"
+                  fill="currentColor" />
+              </svg>
+            </a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#">
+              <svg width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7.636 16.517c-.355-1.5-.7-2.968-1.055-4.428-.782-3.251-1.565-6.502-2.33-9.762-.067-.292-.165-.405-.495-.397-.89.032-1.787.008-2.685.008C.445 1.938 0 1.532 0 .973 0 .405.437 0 1.07 0h3.765c.61 0 .947.276 1.087.86.223.916.453 1.824.651 2.74.05.227.14.284.362.284 3.584-.008 7.175-.008 10.758-.008 2.982 0 5.963-.008 8.937 0 1.763.008 3.146 1.492 2.94 3.178-.09.722-.304 1.42-.469 2.133-.552 2.302-1.095 4.597-1.656 6.9-.362 1.492-1.474 2.351-3.047 2.351H8.122c-.132 0-.272-.008-.404.016a.976.976 0 0 0-.815 1.022.984.984 0 0 0 .922.9c.115.008.222 0 .338 0 5.436 0 10.872 0 16.309.008.23 0 .478.04.684.138.379.178.56.64.47 1.03a.994.994 0 0 1-.858.762 2.517 2.517 0 0 1-.247.008H7.965c-1.524 0-2.718-.957-2.99-2.376-.305-1.597.783-3.121 2.405-3.389.083 0 .149-.016.256-.04ZM7.116 5.83c.017.097.025.17.042.235.815 3.414 1.639 6.819 2.446 10.232.05.211.157.22.322.22h14.513c.61 0 .947-.268 1.087-.86.676-2.814 1.351-5.619 2.018-8.433.206-.875-.214-1.386-1.136-1.386H7.454c-.098-.008-.214-.008-.337-.008ZM10.856 23.307c1.623 0 2.957 1.313 2.957 2.919 0 1.605-1.326 2.902-2.965 2.91-1.615 0-2.95-1.305-2.957-2.886-.009-1.63 1.318-2.935 2.965-2.943Zm-.016 1.946a.986.986 0 0 0-.972.973c0 .543.46.98 1.013.965a.98.98 0 0 0 .955-.99c-.008-.519-.461-.957-.996-.948ZM24.66 26.242c-.008 1.605-1.342 2.895-2.981 2.895-1.623-.009-2.949-1.33-2.94-2.936.016-1.605 1.342-2.894 2.981-2.894 1.631.008 2.949 1.33 2.94 2.935Zm-1.976-.016a.975.975 0 0 0-.972-.973.981.981 0 0 0-.997.948.982.982 0 0 0 .989.99c.535 0 .98-.43.98-.965Z"
+                  fill="currentColor" />
+              </svg>
+            </a>
+          </li>
+          <li class="header__nav-item">
+            <a href="./index.html">
+              <img src="./img/icons/logo-mobile.svg" alt="">
+            </a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#">
+              <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M18.575 30.78c3.11-.537 5.83-1.964 8.073-4.233 2.123-2.148 3.489-4.747 4.074-7.724 1.525-7.845-3.366-15.483-11.135-17.387a15.017 15.017 0 0 0-17.709 9.469 14.213 14.213 0 0 0-.83 3.928c0 .086-.024.159-.036.232 0 .024-.012.037-.012.061v1.745c.024.183.049.354.061.537.049.39.098.78.159 1.171.597 3.44 2.244 6.37 4.89 8.7 2.208 1.952 4.842 3.16 7.806 3.575.268.036.549.073.817.097.122.012.244.025.366.049h1.756l.537-.073a17.41 17.41 0 0 0 1.183-.147ZM6.074 24.814l-.122.415-.293-.305c-1.89-1.99-3.098-4.88-3.33-7.931-.183-2.465.208-6.162 3.098-9.688a13.7 13.7 0 0 1 9.708-4.966c3.769-.244 7.477 1.086 10.184 3.636 6.05 5.71 5.245 14.288 1.025 18.961l-.293.33-.122-.428c-.988-3.44-3.086-5.77-6.403-7.125l-.402-.159.353-.256c1.83-1.354 2.732-3.136 2.683-5.283-.036-1.757-.744-3.27-2.122-4.502-2.463-2.197-6.342-1.953-8.623.549-1.134 1.244-1.707 3.026-1.524 4.77.183 1.782 1.122 3.368 2.647 4.454l.353.256-.414.17c-3.293 1.343-5.452 3.734-6.403 7.102ZM16 17.054c-2.67 0-4.866-2.184-4.878-4.856a4.767 4.767 0 0 1 1.415-3.441 4.876 4.876 0 0 1 3.451-1.452c1.305 0 2.537.513 3.464 1.452a4.767 4.767 0 0 1 1.415 3.44c-.025 2.673-2.208 4.857-4.867 4.857Zm.573 12.628c-.122.013-.219.013-.317.025h-.024c-3.44-.037-6.342-1.05-8.854-3.075-.122-.098-.244-.317-.22-.513.5-3.83 3.513-6.942 7.33-7.589 4.695-.793 9.074 2.111 10.196 6.76v.024c.244 1.013.207 1.123-.61 1.733a13.424 13.424 0 0 1-6.342 2.538 15.87 15.87 0 0 1-1.159.097Z"
+                  fill="currentColor" stroke="currentColor" stroke-width=".7" />
+              </svg>
+            </a>
+          </li>
+          <li class="header__nav-item">
+            <nav class="header__main-nav main-nav main-nav--closed">
+              <button class="btn__nav-toggle">
+                <span class="visually-hidden">Открыть меню</span>
+                <span></span>
+              </button>
+
+              <ul class="main-nav__list">
+                <li class="main-nav__item">
+                  <a href="index.html">
+                    <img src="./img/main-logo-desktop.png" alt="логотип" width="74" height="84">
+                  </a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="#">
+                    Профориентация
+                  </a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="#">
+                    Выбрать вакансию
+                  </a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="#">
+                    Карьера в ГЭНДАЛЬФ
+                  </a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="#">
+                    Стажерство
+                  </a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="#">
+                    Отзывы
+                  </a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="btn btn-type-4 main-nav__link" href="#interview">
+                    Запись на собеседование
+                  </a>
+                </li>
+              </ul>
+
+            </nav>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <h1 class="visually-hidden">Gendalf company website</h1>
+    <section class="section welcome-section">
+      <div class="container">
+        <div class="welcome-section__content">
+          <h2 class="welcome-section__header">
+            Добро пожаловать <br> в ГЭНДАЛЬФ!
+          </h2>
+          <p class="welcome-section__text section__text">
+            Мы готовы поделиться секретом, почему любим компанию, <br> в которой работаем. Если тебе будут близки наши
+            ценности
+            и идеи, <br>
+            то смело записывайся на собеседование!
+          </p>
+          <div class="btn-wrapper">
+            <a class="btn btn-type-1" href="#about">
+              Почему мы
+            </a>
+            <a class="btn btn-type-2" href="#interview">
+              Записаться на собеседование
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section__wrapper">
+          <div class="section__content-wrapper">
+            <h2 class="section__header">
+              О том, чем мы занимаемся
+            </h2>
+            <p class="section__text">
+              ГЭНДАЛЬФ – один из крупнейших игроков на рынке информационных технологий, занимающий 4 место среди 7000
+              партнеров фирмы «1С». У нас есть представительства в 15 городах России, а нашими услугами пользуются 23
+              000
+              организаций-клиентов, в числе которых «Базэл Аэро», «Ростсельмаш», UTG. Аэропорт Кольцово и многие другие.
+            </p>
+            <p class="section__text">
+              Мы тщательно подходим к выбору сотрудников, которые становятся частью команды профессионалов.
+            </p>
+            <p class="section__text">
+              У нас работают специалисты разных областей: программисты, маркетологи, менеджеры, копирайтеры, методисты и
+              другие, чей карьерный рост не ограничен привычными рамками.
+            </p>
+            <div class="btn-wrapper">
+              <a class="btn btn-type-3" href="#">Узнать больше</a>
+              <a class="btn btn-type-4" href="#interview">Записаться на собеседование</a>
+            </div>
+          </div>
+          <div class="about-section__img-wrapper">
+            <img class="about-section__img" src="./img/about-company.png" alt="">
+            <!-- <img src="./img/polygon-46.png" alt="">
+            <img src="./img/polygon-46.png" alt="">
+            <img src="./img/polygon-46.png" alt=""> -->
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section values-section">
+
+      <h2 class="section__header">
+        Наши ценности скажут о нас больше:
+      </h2>
+      <div class="swiper slider">
+        <div class="swiper-wrapper slider-wrapper">
+          <div class="swiper-slide slide">
+            <div class="slide__img-wrapper">
+              <picture>
+                <source media="(min-width: 768px)" srcset="./img/polygon.png" width="75" height="82">
+                <img class="slide__img-count" src="./img/polygon.png" alt="" width="63" height="69">
+              </picture>
+              <span class="slide__counter"></span>
+              <picture>
+                <source media="(min-width: 768px)" srcset="./img/slide-1.png" width="285" height="202">
+                <img class="slide__img" src="./img/slide-1.png" alt="slide-1" width="211" height="150">
+              </picture>
+            </div>
+            <p class="slide__title">
+              Быть командой
+            </p>
+            <p class="slide__text">
+              Готовность вносить вклад в общие цели команды и достигать их.
+            </p>
+          </div>
+          <div class="swiper-slide slide">
+            <div class="slide__img-wrapper">
+              <picture>
+                <source media="(min-width: 768px)" srcset="./img/polygon.png" width="75" height="82">
+                <img class="slide__img-count" src="./img/polygon.png" alt="" width="63" height="69">
+              </picture>
+              <span class="slide__counter"></span>
+              <picture>
+                <source media="(min-width: 768px)" srcset="./img/slide-2.png" width="285" height="202">
+                <img class="slide__img" src="./img/slide-2.png" alt="slide-2" width="211" height="150">
+              </picture>
+            </div>
+            <p class="slide__title">
+              Побеждать <br> и не сдаваться
+            </p>
+            <p class="slide__text">
+              Быть ориентированным на результат, настойчивым и не сдаваться перед трудностями.
+            </p>
+          </div>
+          <div class="swiper-slide slide">
+            <div class="slide__img-wrapper">
+              <picture>
+                <source media="(min-width: 768px)" srcset="./img/polygon.png" width="75" height="82">
+                <img class="slide__img-count" src="./img/polygon.png" alt="" width="63" height="69">
+              </picture>
+              <span class="slide__counter"></span>
+              <picture>
+                <source media="(min-width: 768px)" srcset="./img/slide-3.png" width="285" height="202">
+                <img class="slide__img" src="./img/slide-3.png" alt="slide-3" width="211" height="150">
+              </picture>
+            </div>
+
+            <p class="slide__title">
+              Заботиться о клиентах
+            </p>
+            <p class="slide__text">
+              Выполнять обещания и интересоваться потребностями своих клиентов
+            </p>
+          </div>
+          <div class="swiper-slide slide">
+            <div class="slide__img-wrapper">
+              <picture>
+                <source media="(min-width: 768px)" srcset="./img/polygon.png" width="75" height="82">
+                <img class="slide__img-count" src="./img/polygon.png" alt="" width="63" height="69">
+              </picture>
+              <span class="slide__counter"></span>
+              <picture>
+                <source media="(min-width: 768px)" srcset="./img/slide-4.png" width="170" height="200">
+                <img class="slide__img" src="./img/slide-4.png" alt="slide-4" width="140" height="150">
+              </picture>
+            </div>
+
+            <p class="slide__title">
+              Быть увлеченным <br> и ответственным
+            </p>
+            <p class="slide__text">
+              Вкладывать душу в то, что делаешь <br> и получать от работы удовольствие.
+            </p>
+          </div>
+          <div class="swiper-slide slide">
+            <div class="slide__img-wrapper">
+              <picture>
+                <source media="(min-width: 768px)" srcset="./img/polygon.png" width="75" height="82">
+                <img class="slide__img-count" src="./img/polygon.png" alt="" width="63" height="69">
+              </picture>
+              <span class="slide__counter"></span>
+              <picture>
+                <source media="(min-width: 768px)" srcset="./img/slide-3.png" width="285" height="202">
+                <img class="slide__img" src="./img/slide-3.png" alt="slide-3" width="211" height="150">
+              </picture>
+            </div>
+
+            <p class="slide__title">
+              Заботиться о клиентах
+            </p>
+            <p class="slide__text">
+              Выполнять обещания и интересоваться потребностями своих клиентов
+            </p>
+          </div>
+          <div class="swiper-slide slide">
+            <div class="slide__img-wrapper">
+              <picture>
+                <source media="(min-width: 768px)" srcset="./img/polygon.png" width="75" height="82">
+                <img class="slide__img-count" src="./img/polygon.png" alt="" width="63" height="69">
+              </picture>
+              <span class="slide__counter"></span>
+              <picture>
+                <source media="(min-width: 768px)" srcset="./img/slide-3.png" width="285" height="202">
+                <img class="slide__img" src="./img/slide-3.png" alt="slide-3" width="211" height="150">
+              </picture>
+            </div>
+
+            <p class="slide__title">
+              Заботиться о клиентах
+            </p>
+            <p class="slide__text">
+              Выполнять обещания и интересоваться потребностями своих клиентов
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="section development-section">
+      <div class="container">
+        <div class="section-wrapper">
+          <h2 class="section__header">
+            Инфраструктура для твоего развития и роста
+          </h2>
+          <div class="section__content-wrapper">
+
+            <div class="section__text-wrapper">
+              <p class="section__text">
+                Мы создаем платформу для профессионального развития каждого сотрудника. Главная цель – дать возможность
+                учиться, работать и получать удовольствие от каждой успешной задачи.
+              </p>
+              <p class="section__text">
+                О возможностях личностного роста в ГЭНДАЛЬФ расскажет руководитель Департамента персонала и карьеры
+                Татьяна
+                Арсенович.
+              </p>
+            </div>
+
+            <div class="development-section__video-wrapper">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./img/video-desktop.jpg" width="538" height="297">
+                <img src="./img/video-mobile.jpg" width="354" height="196">
+              </picture>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section practice-section">
+      <div class="container">
+        <div class="section__content-wrapper">
+          <h2 class="section__header practice-section__header">
+            Ты студент и хочешь устроиться <br> на практику?
+          </h2>
+          <a class="btn btn-type-1" href="#interview">
+            Оставить заявку
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section faq-section">
+      <div class="container">
+        <div class="faq-section__content-wrapper">
+          <div class="faq-section__content">
+            <h2 class="faq-section__title">Ответы на вопросы</h2>
+            <details>
+              <summary>
+                На что нужно обратить внимание на собеседовании?
+              </summary>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, temporibus iste. Quis totam illo
+                atque
+                vitae neque similique ipsam. Quia!</p>
+            </details>
+            <details>
+              <summary class="faq-section__summary-small-screen faq-section__age-restrictions">
+                Есть ли какие-то возрастные ограничения при приеме на
+                работу?
+              </summary>
+
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit laboriosam aperiam corrupti dolor
+                aliquam earum fuga minus necessitatibus dignissimos sint.</p>
+            </details>
+            <details>
+              <summary class="faq-section__summary-small-screen faq-section__job-refusal">
+                Объяснят ли сотрудники почему отказано в приеме на работу?
+              </summary>
+
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit laboriosam aperiam corrupti dolor
+                aliquam earum fuga minus necessitatibus dignissimos sint.</p>
+            </details>
+            <details>
+              <summary class="faq-section__summary-small-screen faq-section__interview-amount">
+                Сколько собеседований предстоит пройти перед приемом на
+                работу?
+              </summary>
+
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit laboriosam aperiam corrupti dolor
+                aliquam earum fuga minus necessitatibus dignissimos sint.</p>
+            </details>
+          </div>
+          <img class="faq-section__img" src="./img/faq.png" alt="" width="378" height="320">
+        </div>
+      </div>
+    </section>
+
+    <section class="section interview-section" id="interview">
+      <div class="container">
+
+        <form class="interview-section__form" method="post">
+          <h2 class="interview-section__tilte">Записаться <br> на собеседование</h2>
+
+          <fieldset class="interview-section__group">
+            <div class="interview-section__item">
+              <label class="visually-hidden" for="name">Введите имя</label>
+              <input class="interview-section__input" minlength="2" type="text" name="username" id="name"
+                placeholder="Как к вам обращаться?" required>
+              <span class="interview-section__input-message">
+                Введите свое имя длинной минимум 2 символа
+              </span>
+            </div>
+            <div class="interview-section__item">
+              <label class="visually-hidden" for="phone-number">Введите телефон</label>
+              <input class="interview-section__input" type="tel" name="phone-number" pattern="^\+7[1-9]{10}$"
+                id="phone-number" placeholder="Телефон" required>
+              <span class="interview-section__input-message">
+                Введите свой телефон в формате +79999999999
+              </span>
+            </div>
+            <div class="interview-section__item">
+              <label class="visually-hidden" for="email">Введите email</label>
+              <input class="interview-section__input" type="email" name="email" id="email" placeholder="Email" required>
+              <span class="interview-section__input-message">
+                Введите электропочту в формате asd@asd.ru
+              </span>
+            </div>
+            <div class="interview-section__item">
+              <label class="visually-hidden" for="position">Введите желаемую должность</label>
+              <input class="interview-section__input" type="text" name="position" id="position"
+                placeholder="Желаемая должность" required>
+            </div>
+          </fieldset>
+
+          <fieldset class="interview-section__group">
+            <p class="interview-section__group-title">Выберите категорию занятости</p>
+            <ul class="interview-section__list">
+              <li class="interview-section__list-item">
+                <input class="interview-section__input-radio visually-hidden" type="radio" name="type-of-job"
+                  id="office">
+                <span class="interview-section__input-mark"></span>
+                <label for="office">Работа в офисе</label>
+              </li>
+              <li class="interview-section__list-item">
+                <input class="interview-section__input-radio visually-hidden" type="radio" name="type-of-job"
+                  id="practice">
+                <span class="interview-section__input-mark"></span>
+                <label for="practice">Стажировка</label>
+              </li>
+              <li class="interview-section__list-item">
+                <input class="interview-section__input-radio visually-hidden" type="radio" name="type-of-job"
+                  id="remote">
+                <span class="interview-section__input-mark"></span>
+                <label for="remote">Удаленная работа</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="interview-section__group">
+            <textarea class="interview-section__textarea" placeholder="Ваши вопросы" name="" id="" cols="30"
+              rows="1"></textarea>
+          </fieldset>
+
+          <fieldset class="interview-section__group interview-section__btn-wrapper">
+            <div class="interview-section__upload-cv">
+              <label class="btn btn__upload-cv btn-type-2" for="file">
+                Прикрепить резюме
+                <svg width="28" height="27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M28 20.255c-.093.598-.227 1.19-.4 1.77a6.97 6.97 0 0 1-2.017 3.097 7.157 7.157 0 0 1-3.34 1.662 7.27 7.27 0 0 1-3.761-.065 7.166 7.166 0 0 1-3.207-1.933c-4.53-4.42-9.045-8.855-13.546-13.304A5.413 5.413 0 0 1 .041 8.19a5.37 5.37 0 0 1 .833-3.594A5.329 5.329 0 0 1 2.957 2.62a5.45 5.45 0 0 1 2.824-.627c.74.005 1.47.156 2.148.445.679.289 1.29.709 1.8 1.235 3.889 3.815 7.775 7.633 11.66 11.452a3.648 3.648 0 0 1 1.162 2.526 3.638 3.638 0 0 1-.964 2.606 3.771 3.771 0 0 1-2.543 1.204 3.788 3.788 0 0 1-2.676-.882l-.301-.276-10.138-9.93a.948.948 0 0 1-.35-1.026.899.899 0 0 1 .575-.591.934.934 0 0 1 .826.11c.099.079.193.164.28.254 3.39 3.292 6.748 6.584 10.076 9.875.248.284.577.489.944.588.367.1.756.089 1.117-.03.282-.093.536-.25.744-.459a1.806 1.806 0 0 0 .154-2.392 4.837 4.837 0 0 0-.309-.337L8.425 5.009a3.803 3.803 0 0 0-2.56-1.13 3.814 3.814 0 0 0-2.647.92 3.66 3.66 0 0 0-.452 5.099c.113.124.232.248.358.372 4.46 4.385 8.923 8.769 13.392 13.153a5.54 5.54 0 0 0 2.986 1.618 5.65 5.65 0 0 0 2.854-.2 5.558 5.558 0 0 0 2.374-1.567 5.415 5.415 0 0 0 1.264-2.521 5.361 5.361 0 0 0-.181-2.805 5.575 5.575 0 0 0-1.459-2.238L10.094 1.683a.968.968 0 0 1-.365-.999.904.904 0 0 1 .22-.395.927.927 0 0 1 .842-.274.934.934 0 0 1 .417.188c.077.062.147.137.217.206l14.29 14.027a7.377 7.377 0 0 1 2.103 3.843c.056.282.098.565.147.847l.035 1.13Z"
+                    fill="currentColor" />
+                </svg>
+              </label>
+
+              <input class="visually-hidden" type="file" name="file" id="file">
+
+            </div>
+
+            <button class="btn btn-type-1" type="submit">Оставить заявку</button>
+          </fieldset>
+
+        </form>
+      </div>
+    </section>
+
+  </main>
+  <script src="./js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      freeMode: true,
+      // spaceBetween: 56,
+      breakpoints: {
+        350: {
+          spaceBetween: 56,
+        },
+        768: {
+          spaceBetween: 37,
+        }
+      },
+      slidesPerView: 'auto',
+    });
+  </script>
+</body>
+
+</html>

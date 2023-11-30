@@ -1,0 +1,48 @@
+// .section {
+// }
+
+@mixin section-background {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+.section__content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.section__header {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 38px;
+  text-align: center;
+  color: $light-blue;
+}
+
+.section__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+@media (min-width: 768px) {
+  .section__header {
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 49px;
+  }
+
+  .section__content-wrapper {
+    margin-bottom: 0;
+    gap: 11px;
+  }
+
+  .section__text {
+    font-size: 18px;
+    line-height: 24.5px;
+  }
+}

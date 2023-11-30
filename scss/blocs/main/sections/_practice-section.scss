@@ -1,0 +1,34 @@
+.practice-section {
+  padding: 34px 0 29px;
+  background: url("./../../../img/get-practice.jpg") $shade;
+  @include section-background;
+}
+
+.practice-section .section__content-wrapper {
+  margin-bottom: 0;
+  gap: 21px;
+  align-items: center;
+}
+
+.practice-section__header {
+  font-weight: 300;
+  color: $white;
+}
+
+@media (min-width: 1280px) {
+  .practice-section {
+    padding: 83px 0 141px;
+    background: url("./../../../img/get-practice-desktop.jpg") $shade;
+    @include section-background;
+  }
+
+  .practice-section .section__content-wrapper {
+    gap: 43px;
+  }
+
+  .practice-section__header {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+  }
+}

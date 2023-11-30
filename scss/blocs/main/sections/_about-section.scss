@@ -1,0 +1,38 @@
+.about-section {
+  padding: 45px 0 30px;
+}
+
+.about-section__img {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .about-section {
+    padding: 50px 0 59px;
+  }
+
+  .section__wrapper {
+    display: flex;
+    gap: 23px;
+  }
+
+  .section__wrapper .section__header {
+    margin-bottom: 10px;
+    text-align: left;
+  }
+
+  .about-section__img {
+    display: block;
+  }
+
+  .about-section__img-wrapper {
+    align-self: self-end;
+    margin-bottom: 32px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .section__wrapper {
+    gap: 83px;
+  }
+}

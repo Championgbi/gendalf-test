@@ -1,0 +1,155 @@
+@mixin btn-1 {
+  background-color: $light-green;
+  border: 1px solid $light-green;
+
+  &:hover {
+    background-color: $white;
+    border: 1px solid $light-green;
+    color: $light-green;
+  }
+}
+
+@mixin btn-2 {
+  color: $light-green;
+  border: 1px solid $light-green;
+  background-color: $white;
+
+  &:hover {
+    color: $white;
+    border: 1px solid $light-green;
+    background-color: $light-green;
+  }
+}
+
+@mixin btn-3 {
+  background-color: $light-blue;
+  border: 1px solid $light-blue;
+
+  &:hover {
+    background-color: $white;
+    color: $light-blue;
+  }
+}
+
+@mixin btn-4 {
+  color: $light-blue;
+  border: 1px solid $light-blue;
+
+  &:hover {
+    background-color: $light-blue;
+    color: $white;
+  }
+}
+
+.btn {
+  display: block;
+  min-width: 295px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24.5px;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  padding: 12px 0;
+  margin: 0 auto;
+  max-height: 50px;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  scale: 101%;
+}
+
+.btn-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-type-1 {
+  @include btn-1;
+}
+
+.btn-type-2 {
+  @include btn-2;
+}
+
+.btn-type-3 {
+  @include btn-3;
+}
+
+.btn-type-4 {
+  @include btn-4;
+}
+
+.btn__upload-cv {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 13px;
+
+  border: 2px solid $light-green;
+}
+
+@media (min-width: 768px) {
+  .btn {
+    min-width: auto;
+    margin: 0;
+  }
+
+  .btn-wrapper {
+    flex-direction: row;
+  }
+
+  .welcome-section .btn-wrapper {
+    gap: 63px;
+  }
+
+  .welcome-section .btn-type-1 {
+    min-width: 175px;
+  }
+
+  .welcome-section .btn-type-2 {
+    min-width: 327px;
+  }
+
+  .about-section .btn-wrapper {
+    margin-top: 10px;
+    gap: 20px;
+  }
+
+  .about-section .btn-type-3 {
+    min-width: 225px;
+  }
+
+  .about-section .btn-type-4 {
+    min-width: 320px;
+  }
+
+  .practice-section .btn-type-1 {
+    min-width: 289px;
+  }
+
+  .interview-section .btn-type-1 {
+    max-width: 295px;
+  }
+
+  .interview-section .btn-type-2 {
+    max-width: 270px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .btn__nav-toggle {
+    display: none;
+  }
+
+  .header__main-nav .btn-type-4 {
+    background-color: $white;
+    color: $light-blue;
+    font-weight: 400;
+    padding: 7px 14px 8px;
+  }
+}

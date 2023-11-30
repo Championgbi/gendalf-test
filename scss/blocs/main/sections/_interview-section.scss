@@ -1,0 +1,182 @@
+.interview-section {
+  padding: 18px 0;
+  background: url("./../../../img/intervew-mobile.jpg") $shade;
+  mix-blend-mode: multiply;
+  @include section-background;
+}
+
+.interview-section__form {
+  padding: 24px 28px 10px 30px;
+  background-color: rgba(0, 183, 236, 0.9);
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+.interview-section__group,
+.interview-section__list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.interview-section__group-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: $white;
+}
+
+.interview-section__list {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: $white;
+}
+
+.interview-section__list input {
+  background-color: transparent;
+}
+
+.interview-section__tilte {
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 38px;
+  text-align: center;
+  color: $white;
+}
+
+.interview-section__input {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24.5px;
+  color: rgba(102, 102, 102, 1);
+  width: 100%;
+  background-color: $white;
+  padding: 13px 19px 12px;
+  border-radius: 5px;
+  border: 1px solid $gray;
+  position: relative;
+}
+
+.interview-section__input:focus {
+  outline: 2px solid $gray;
+}
+
+.interview-section__input-message {
+  color: red;
+  font-size: 16px;
+  display: none;
+  background-color: white;
+  width: fit-content;
+  padding: 3px;
+  border-radius: 5px;
+  margin-left: auto;
+}
+
+.interview-section__input::placeholder {
+  opacity: 50%;
+}
+
+.interview-section__input:valid {
+  outline: 2px solid $light-green;
+  border: 1px solid transparent;
+  background-image: url("./../../../../img/icons/form-valid.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+}
+
+.interview-section__input:invalid:not(:placeholder-shown) {
+  outline: 2px solid $error;
+  border: 1px solid transparent;
+  position: relative;
+  background-image: url("./../../../../img/icons/form-invalid.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+}
+
+.interview-section__input:invalid:not(:placeholder-shown)
+  + .interview-section__input-message {
+  display: block;
+}
+
+.interview-section__upload-cv {
+  display: flex;
+}
+
+.interview-section__list-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.interview-section__input-radio:checked
+  + .interview-section__input-mark::before {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: $white;
+  left: calc(50% - 4px);
+  top: calc(50% - 4px);
+}
+
+.interview-section__input-mark {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  border: 1px solid $white;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.interview-section__textarea {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24.5px;
+  resize: none;
+  padding: 13px 0 12px 19px;
+  border-radius: 5px;
+  border: 1px solid $gray;
+}
+
+.interview-section__textarea:active,
+.interview-section__textarea:focus {
+  border: 1px solid $gray;
+  outline: none;
+}
+
+.interview-section__textarea::placeholder {
+  color: $gray;
+  opacity: 50%;
+}
+
+@media (min-width: 768px) {
+  .interview-section {
+    padding: 61px 0;
+    background: url("./../../../img/intervew-desktop.jpg") $shade;
+    mix-blend-mode: multiply;
+    @include section-background;
+  }
+
+  .interview-section__form {
+    padding: 43px 142px 58px 130px;
+  }
+
+  .interview-section__tilte br {
+    display: none;
+  }
+
+  .interview-section__upload-cv {
+    display: block;
+  }
+
+  .interview-section__btn-wrapper {
+    display: grid;
+    grid-template-columns: 275px auto;
+    gap: 5px;
+  }
+}

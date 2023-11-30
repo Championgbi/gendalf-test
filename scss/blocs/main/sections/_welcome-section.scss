@@ -1,0 +1,52 @@
+.welcome-section {
+  padding: 31px 0 35px;
+  background: url(./../../../img/welcome-img.jpg) $shade;
+  @include section-background;
+}
+
+.welcome-section__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcome-section__header {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  text-align: center;
+  color: $white;
+  margin-bottom: 20px;
+}
+
+.welcome-section__text {
+  text-align: center;
+  color: $white;
+  margin-bottom: 42px;
+}
+
+.welcome-section__text br {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .welcome-section {
+    padding: 63px 0 114px;
+    background: url(./../../../img/welcome-img-desktop.jpg) $shade;
+    @include section-background;
+  }
+
+  .welcome-section__header {
+    font-size: 64px;
+    line-height: 87px;
+  }
+
+  .welcome-section__text {
+    font-size: 25px;
+    line-height: 34px;
+  }
+
+  .welcome-section__text br {
+    display: block;
+  }
+}

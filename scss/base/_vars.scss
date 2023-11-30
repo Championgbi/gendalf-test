@@ -1,0 +1,38 @@
+// :root {
+//   --container-width: 1200px;
+//   --container-padding: 40px;
+
+//   // --font-main: "Poppins", sans-serif;
+//   // --font-accent: "Playfair Display", serif;
+
+//   // --h3-color: #fff;
+//   // --text-color: #000;
+//   // --main-color: #b68a7f;
+//   // --brown: #a67e74;
+//   // --link-color: rgba(182, 138, 127, 0.5);
+//   // --btn: wheat;
+//   // --btn-booking: rgba(182, 138, 127, 0.7);
+//   // --btn-booking-room: #ac182c;
+
+// --laptop-size: 1199px;
+// --tablet-size: 959px;
+// --mobile-size: 599px;
+// }
+
+// .dark {
+//   --page-bg: #252526;
+//   --text-color: #fff;
+// }
+
+$white: rgba(255, 255, 255, 1);
+$light-green: rgba(155, 204, 55, 1);
+$light-blue: rgba(0, 183, 236, 1);
+$gray: rgba(102, 102, 102, 1);
+$light-gray-bg: rgba(233, 233, 233, 1);
+$gradient-bg-1: rgba(40, 228, 115, 0.5), rgba(70, 205, 22, 0.3),
+  rgba(39, 221, 209, 0.8), rgba(5, 176, 213, 0.8);
+$gradient-bg-2: rgba(5, 176, 213, 0.8) rgba(39, 221, 209, 0.8)
+  rgba(70, 205, 22, 0.3) rgba(40, 228, 115, 0.5);
+$shade-welcome: rgba(0, 47, 61, 0.7);
+$shade: rgba(0, 47, 61, 0.6);
+$error: rgba(253, 117, 131, 1);
