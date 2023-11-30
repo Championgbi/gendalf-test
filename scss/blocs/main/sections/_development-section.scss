@@ -29,7 +29,7 @@
 
 .development-section__video-wrapper::before {
   position: absolute;
-  content: url("./../../../img/btn-play.png");
+  content: url("./../img/btn-play.png");
   top: calc(50% - 29px);
   left: calc(50% - 29px);
 }
@@ -62,7 +62,7 @@
   }
 
   .development-section__video-wrapper::before {
-    content: url("./../../../img/btn-play-desktop.png");
+    content: url("./../img/btn-play-desktop.png");
     top: calc(50% - 45px);
     left: calc(50% - 45px);
   }

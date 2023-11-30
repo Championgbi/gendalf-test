@@ -1,6 +1,6 @@
 .practice-section {
   padding: 34px 0 29px;
-  background: url("./../../../img/get-practice.jpg") $shade;
+  background: url("./../img/get-practice.jpg") $shade;
   @include section-background;
 }
 
@@ -18,7 +18,7 @@
 @media (min-width: 1280px) {
   .practice-section {
     padding: 83px 0 141px;
-    background: url("./../../../img/get-practice-desktop.jpg") $shade;
+    background: url("./../img/get-practice-desktop.jpg") $shade;
     @include section-background;
   }
 

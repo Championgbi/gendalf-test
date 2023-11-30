@@ -1,6 +1,6 @@
 .welcome-section {
   padding: 31px 0 35px;
-  background: url(./../../../img/welcome-img.jpg) $shade;
+  background: url("./../img/welcome-img.jpg") $shade;
   @include section-background;
 }
 
@@ -32,7 +32,7 @@
 @media (min-width: 768px) {
   .welcome-section {
     padding: 63px 0 114px;
-    background: url(./../../../img/welcome-img-desktop.jpg) $shade;
+    background: url("./../img/welcome-img-desktop.jpg") $shade;
     @include section-background;
   }
 
